@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/Sunshinejr/SwiftCarousel"
   s.license          = 'MIT'
   s.author           = { "Łukasz Mróz" => "lukasz.mroz@droidsonroids.pl" }
-  s.source           = { :git => "https://github.com/DroidsOnRoids/SwiftCarousel.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/TectusDreamlab/SwiftCarousel.git", :branch => "master" }
   s.social_media_url = 'https://twitter.com/thesunshinejr'
 
   s.platform     = :ios, '8.0'
