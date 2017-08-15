@@ -322,11 +322,11 @@ open class SwiftCarousel: UIView {
                 newOffsetX = newOffset.x + segmentWidth // move forward one segment
             }
             // We are in middle segment still so no need to scroll elsewhere
-            guard newOffsetX != nil && newOffsetX > 0 else {
+            guard let validOffSetX = newOffsetX, validOffSetX > 0, self.scrollView.contentOffset.x != validOffSetX else {
                 return
             }
             
-            self.scrollView.contentOffset.x = newOffsetX
+            self.scrollView.contentOffset.x = validOffSetX
             
             self.delegate?.didScroll?(toOffset: self.scrollView.contentOffset)
         }
