@@ -21,7 +21,7 @@
  */
 
 public func ==(lhs: SwiftCarouselScroll, rhs: SwiftCarouselScroll) -> Bool {
-    return String(stringInterpolationSegment: lhs) == String(stringInterpolationSegment: rhs)
+    return "\(lhs)" == "\(rhs)"
 }
 
 /// Type for defining if the carousel should be constrained when scrolling.
